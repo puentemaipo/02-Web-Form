@@ -1,0 +1,102 @@
+<%- include('partials/header') %>
+
+<section class="page-header">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">
+            Contacto
+        </h1>
+
+        <p class="lead">
+            Cuéntanos sobre tu próximo proyecto.
+        </p>
+    </div>
+</section>
+
+
+<section class="container py-5">
+    <% if (mensajeExito) { %>
+
+        <div class="alert alert-success">
+
+            <i class="bi bi-check-circle me-2"></i>
+
+            <%= mensajeExito %>
+
+        </div>
+
+    <% } %>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow border-0">
+                <div class="card-body p-5">
+
+                    <form action="/contacto" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Nombre
+                            </label>
+                            <input
+                                type="text"
+                                name="nombre"
+                                class="form-control"
+                                placeholder="Tu nombre"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                name="correo"
+                                class="form-control"
+                                placeholder="correo@ejemplo.com"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Asunto
+                            </label>
+
+                            <input
+                                type="text"
+                                name="asunto"
+                                class="form-control"
+                                placeholder="¿En qué podemos ayudarte?"
+                                required>
+                        </div>
+
+
+                        <div class="mb-4">
+                            <label class="form-label">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                name="mensaje"
+                                class="form-control"
+                                rows="5"
+                                placeholder="Cuéntanos sobre tu proyecto"
+                                required></textarea>
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-lg">
+
+                            Enviar mensaje
+
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%- include('partials/footer') %>

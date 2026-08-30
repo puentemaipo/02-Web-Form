@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #e7f1ff
+        );
+
+    display: flex;
+    align-items: center;
+}
+
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+
+.hero-icon {
+    font-size: 15rem;
+    color: #0d6efd;
+}
+
+
+/* TITULOS DE PAGINA */
+
+.page-header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d6efd,
+            #6610f2
+        );
+
+    color: white;
+
+    padding: 90px 0;
+
+}
+
+
+/* SERVICIOS */
+
+.service-card {
+
+    border: none;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.service-icon {
+
+    font-size: 3rem;
+
+    color: #0d6efd;
+
+}
+
+
+/* NOSOTROS */
+
+.about-icon {
+
+    font-size: 13rem;
+
+    color: #0d6efd;
+
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* FORMULARIO */
+
+.form-control {
+
+    padding: 12px;
+
+}
+
+
+.form-control:focus {
+
+    box-shadow: none;
+
+    border-color: #0d6efd;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    margin-top: auto;
+
+}
